@@ -22,7 +22,7 @@ class Login extends Component {
         this.setState({ Password: event.target.value })  
     }  
     login(event) {    
-        fetch('http://localhost:8081/user-search', {  
+        fetch('http://gemoshine-backend.azurewebsites.net/user-search', {  
             method: 'post',  
             headers: {  
                 'Accept': 'application/json',  

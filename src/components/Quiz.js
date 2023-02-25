@@ -9,7 +9,7 @@ import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGr
     }
 
     componentDidMount() {
-        fetch('http://localhost:8081/fetch-questions-by-type-category?questionCategory=simple&questionType=aoi')
+        fetch('http://gemoshine-backend.azurewebsites.net/fetch-questions-by-type-category?questionCategory=simple&questionType=aoi')
           .then(response => response.json())
           .then(json => this.setState({ questions: json }));
       }
