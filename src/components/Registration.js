@@ -62,7 +62,7 @@ class Registration extends Component {
   
   register(event) {  
   
-    fetch('http://gemoshine-backend.azurewebsites.net/addUser', {  
+    fetch('https://gemoshine-backend.azurewebsites.net/addUser', {  
       method: 'post',  
       headers: {  
         'Accept': 'application/json',  
